@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7137A8">
+  <meta name="description" content="Transformarte: conectando con tu bienestar. Aprende, practica y cuida tu salud.">
+  <title>Transformarte | Conectando con tu bienestar</title>
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #faf8ff;
+      color: #34234e;
+    }
+    header {
+      text-align: center;
+      padding: 25px 16px;
+      background: white;
+    }
+    .logo {
+      font-size: 35px;
+      font-weight: 800;
+      color: #7137A8;
+    }
+    .logo span { color: #e99a22; }
+    .slogan { color: #31566b; margin-top: 6px; }
+    .welcome {
+      margin: 16px;
+      padding: 25px;
+      border-radius: 22px;
+      color: white;
+      background: linear-gradient(120deg,#51249a,#a66bd0);
+    }
+    .welcome h1 { margin: 0 0 8px; font-size: 30px; }
+    main { max-width: 850px; margin: auto; padding: 10px 16px 30px; }
+    h2 { text-align: center; color: #65349a; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 14px;
+    }
+    .card {
+      border: 0;
+      border-radius: 22px;
+      padding: 20px 12px;
+      min-height: 160px;
+      text-align: center;
+      color: #30204c;
+      cursor: pointer;
+      box-shadow: 0 3px 10px #30204c18;
+      font-size: 17px;
+    }
+    .card strong { display: block; font-size: 20px; margin: 8px 0; }
+    .card .emoji { font-size: 42px; }
+    .blue { background: #dcefff; }
+    .pink { background: #ffe3eb; }
+    .green { background: #dcf8ec; }
+    .yellow { background: #fff0d5; }
+    .purple { background: #eee2ff; }
+    .family {
+      margin-top: 16px;
+      padding: 20px;
+      border-radius: 20px;
+      background: #eee2ff;
+      text-align: center;
+    }
+    button:focus-visible {
+      outline: 3px solid #e99a22;
+      outline-offset: 3px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #665879;
+      font-size: 13px;
+    }
+    @media(max-width:480px) {
+      .grid { grid-template-columns: 1fr; }
+      .welcome h1 { font-size: 25px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">💜 TRANSFORM<span>ARTE</span></div>
+    <div class="slogan">Conectando con tu bienestar</div>
+  </header>
+
+  <section class="welcome">
+    <h1>¡Bienvenido!</h1>
+    <p>Tu salud, tu aprendizaje, tu bienestar.</p>
+    <strong>Aprendo, practico y cuido mi salud.</strong>
+  </section>
+
+  <main>
+    <h2>¿Qué quieres aprender hoy?</h2>
+
+    <div class="grid">
+      <button class="card blue" onclick="abrir('Diabetes')">
+        <span class="emoji">🩸</span>
+        <strong>Diabetes</strong>
+        Aprende a cuidar tu salud
+      </button>
+
+      <button class="card pink" onclick="abrir('Anticoagulación')">
+        <span class="emoji">❤️</span>
+        <strong>Anticoagulación</strong>
+        Cuídate con seguridad
+      </button>
+
+      <button class="card green" onclick="abrir('Aprendo jugando')">
+        <span class="emoji">🎮</span>
+        <strong>Aprendo jugando</strong>
+        Retos y actividades
+      </button>
+
+      <button class="card yellow" onclick="abrir('Escucho y observo')">
+        <span class="emoji">🎧</span>
+        <strong>Escucho y observo</strong>
+        Videos y audios
+      </button>
+    </div>
+
+    <section class="family">
+      <div style="font-size:38px">👨‍👩‍👧‍👦</div>
+      <h2>Mi familia también aprende</h2>
+      Orientaciones para acompañarte en casa.
+      <p><button onclick="abrir('Mi familia también aprende')">
+        Conocer más
+      </button></p>
+    </section>
+  </main>
+
+  <footer>
+    Transformarte · Conectando con tu bienestar<br>
+    Educación para el autocuidado y el bienestar.
+  </footer>
+
+  <script>
+    function abrir(seccion) {
+      alert("¡Bienvenido a " + seccion +
+        "! Próximamente encontrarás aquí nuestros contenidos educativos.");
+    }
+  </script>
+</body>
+</html>

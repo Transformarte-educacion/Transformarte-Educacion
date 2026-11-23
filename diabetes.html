@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#76509A">
+<title>Aprendiendo a vivir con diabetes | TRANSFORMARTE</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #F8F5FA;
+  color: #40354A;
+  line-height: 1.6;
+}
+
+header {
+  background: white;
+  text-align: center;
+  padding: 20px 12px;
+  border-bottom: 3px solid #E9DFEF;
+}
+
+header img {
+  width: 190px;
+  max-width: 80%;
+  height: auto;
+}
+
+main {
+  max-width: 850px;
+  margin: auto;
+  padding: 20px 16px;
+}
+
+h1, h2, h3 { color: #70468D; }
+
+h1 { font-size: 28px; line-height: 1.25; }
+
+h2 { font-size: 23px; }
+
+p { font-size: 16px; }
+
+.volver {
+  display: inline-block;
+  background: #70468D;
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.portada {
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  padding: 25px 18px;
+  box-shadow: 0 3px 12px #00000010;
+}
+
+.ilustracion {
+  font-size: 65px;
+  margin: 12px;
+}
+
+.etiqueta {
+  display: inline-block;
+  background: #EDE3F3;
+  color: #70468D;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.temas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13px;
+  margin-top: 22px;
+}
+
+.tarjeta {
+  background: white;
+  border: 1px solid #E9DFEF;
+  border-radius: 17px;
+  padding: 18px 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #40354A;
+  box-shadow: 0 2px 8px #00000009;
+}
+
+.tarjeta:focus, button:focus, a:focus {
+  outline: 3px solid #E69A32;
+  outline-offset: 3px;
+}
+
+.tarjeta .icono { font-size: 38px; }
+
+.tarjeta h3 {
+  font-size: 17px;
+  margin: 7px 0;
+}
+
+.tarjeta p {
+  font-size: 13px;
+  margin: 0;
+}
+
+.unidad {
+  background: white;
+  border-radius: 18px;
+  padding: 22px 18px;
+  margin-top: 24px;
+  box-shadow: 0 3px 10px #0000000c;
+  scroll-margin-top: 15px;
+}
+
+.unidad .ilustracion { text-align: center; }
+
+.consejo {
+  background: #EAF5F3;
+  border-left: 5px solid #36A69B;
+  padding: 14px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.alerta {
+  background: #FFF1E9;
+  border-left: 5px solid #D85B42;
+  padding: 14px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.pregunta {
+  background: #F2ECF7;
+  padding: 16px;
+  border-radius: 14px;
+  margin-top: 16px;
+}
+
+button {
+  background: #70468D;
+  color: white;
+  border: none;
+  padding: 12px 17px;
+  margin: 5px 3px;
+  border-radius: 12px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover { background: #59366F; }
+
+.respuesta {
+  font-weight: bold;
+  margin-top: 12px;
+  min-height: 24px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 12px;
+  color: #76677E;
+  font-size: 13px;
+}
+
+@media(max-width: 480px) {
+  .temas { grid-template-columns: 1fr; }
+  h1 { font-size: 25px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo-transformarte.png"
+       alt="TRANSFORMARTE - Conectando con tu bienestar">
+</header>
+
+<main>
+
+<a class="volver" href="index.html">← Volver al inicio</a>
+
+<section class="portada">
+  <span class="etiqueta">MÓDULO EDUCATIVO 1</span>
+  <div class="ilustracion">💜 🩺 🍎</div>
+  <h1>Aprendiendo a vivir con diabetes</h1>
+  <p>Pequeños aprendizajes para cuidar tu salud todos los días.</p>
+  <p><strong>¡Aprendamos juntos! Tú y tu familia pueden lograrlo.</strong></p>
+</section>
+
+<h2>¿Qué quieres aprender hoy?</h2>
+<p>Elige un tema para comenzar.</p>
+
+<section class="temas">
+
+<a class="tarjeta" href="#tema1">
+  <div class="icono">🩺</div>
+  <h3>Conozcamos la diabetes</h3>
+  <p>¿Qué es y qué sucede en nuestro cuerpo?</p>
+</a>
+
+<a class="tarjeta" href="#tema2">
+  <div class="icono">💊</div>
+  <h3>Medicamentos</h3>
+  <p>Aprende a usarlos de forma segura.</p>
+</a>
+
+<a class="tarjeta" href="#tema3">
+  <div class="icono">🚶</div>
+  <h3>Actividad física</h3>
+  <p>Muévete y cuida tus pies.</p>
+</a>
+
+<a class="tarjeta" href="#tema4">
+  <div class="icono">🥗</div>
+  <h3>Alimentación saludable</h3>
+  <p>Elige alimentos que te ayuden.</p>
+</a>
+
+<a class="tarjeta" href="#tema5">
+  <div class="icono">💚</div>
+  <h3>Gestión emocional</h3>
+  <p>Cuida tus emociones y busca apoyo.</p>
+</a>
+
+<a class="tarjeta" href="#tema6">
+  <div class="icono">🚨</div>
+  <h3>Signos de alarma</h3>
+  <p>Reconoce cuándo necesitas ayuda.</p>
+</a>
+
+</section>
+
+<section class="unidad" id="tema1">
+  <span class="etiqueta">TEMA 1</span>
+  <div class="ilustracion">🩸</div>
+  <h2>¿Qué es la diabetes?</h2>
+  <p>La diabetes es una enfermedad en la que el azúcar en la sangre permanece más alta de lo normal.</p>
+  <p>El cuerpo necesita una sustancia llamada <strong>insulina</strong> para ayudar a que el azúcar entre en las células y produzca energía.</p>
+  <div class="consejo">
+    💡 <strong>Recuerda:</strong> controlar la diabetes ayuda a proteger tu corazón, ojos, riñones, nervios y pies.
+  </div>
+  <h3>¿Qué ayuda a cuidar tu salud?</h3>
+  <p>Tomar los medicamentos indicados, alimentarte bien, moverte, asistir a los controles y cuidar tus emociones.</p>
+</section>
+
+<section class="unidad" id="tema2">
+  <span class="etiqueta">TEMA 2 · PILAR 1</span>
+  <div class="ilustracion">💊</div>
+  <h2>Uso adecuado de los medicamentos</h2>
+  <p>Los medicamentos ayudan a controlar el azúcar en la sangre.</p>
+  <ul>
+    <li>Tómalos en la dosis y horario indicados.</li>
+    <li>No los suspendas por tu cuenta.</li>
+    <li>No compartas tus medicamentos.</li>
+    <li>Aprende a conservar y aplicar la insulina si la utilizas.</li>
+    <li>Consulta si tienes dudas o efectos no esperados.</li>
+  </ul>
+  <div class="consejo">
+    💡 Nunca cambies la dosis de tus medicamentos sin consultar al equipo de salud.
+  </div>
+  <p>Si olvidas una dosis, consulta las instrucciones de tu medicamento o pregunta al personal de salud. No dupliques la dosis por tu cuenta.</p>
+</section>
+
+<section class="unidad" id="tema3">
+  <span class="etiqueta">TEMA 3 · PILAR 2</span>
+  <div class="ilustracion">🚶‍♀️ 👟</div>
+  <h2>Actividad física y cuidado de los pies</h2>
+  <p>¡Moverte es bueno para tu salud!</p>
+  <ul>
+    <li>Camina según tus capacidades.</li>
+    <li>Evita permanecer sentado durante mucho tiempo.</li>
+    <li>Usa zapatos cómodos y adecuados.</li>
+    <li>Revisa tus pies todos los días.</li>
+    <li>Lava y seca bien tus pies, especialmente entre los dedos.</li>
+    <li>No camines descalzo.</li>
+  </ul>
+  <div class="consejo">
+    💡 Si encuentras una herida, ampolla, cambio de color o hinchazón en tus pies, consulta pronto. No esperes a que duela.
+  </div>
+  <p>Antes de iniciar una rutina de ejercicio, consulta si tienes alguna condición que requiera cuidados especiales.</p>
+</section>
+
+<section class="unidad" id="tema4">
+  <span class="etiqueta">TEMA 4 · PILAR 3</span>
+  <div class="ilustracion">🥦 🍎 🥕</div>
+  <h2>Alimentación saludable</h2>
+  <p>Comer saludable no significa dejar de comer. Significa aprender a elegir y combinar los alimentos.</p>
+  <h3>Organiza tu plato</h3>
+  <div style="background:#EAF5F3;border-radius:15px;padding:16px;text-align:center;">
+    <div style="font-size:48px;">🥗 🍗 🍚</div>
+    <strong>½ plato:</strong> verduras.<br>
+    <strong>¼ plato:</strong> proteínas como pollo, pescado o huevo.<br>
+    <strong>¼ plato:</strong> arroz, papa, yuca o cereales.
+  </div>
+  <ul>
+    <li>Prefiere agua en lugar de bebidas azucaradas.</li>
+    <li>Incluye verduras en tus comidas.</li>
+    <li>Elige frutas enteras en porciones adecuadas.</li>
+    <li>Modera los dulces y productos ultraprocesados.</li>
+  </ul>
+  <div class="consejo">
+    💡 No necesitas alimentos costosos. Los alimentos de tu región pueden ayudarte a comer saludablemente.
+  </div>
+</section>
+
+<section class="unidad" id="tema5">
+  <span class="etiqueta">TEMA 5 · PILAR 4</span>
+  <div class="ilustracion">💚 🌿</div>
+  <h2>Gestión emocional</h2>
+  <p>Vivir con diabetes puede generar preocupación, tristeza, miedo o cansancio. ¡Tus emociones también merecen cuidado!</p>
+  <ul>
+    <li>Habla de lo que sientes.</li>
+    <li>Busca apoyo en tu familia y personas de confianza.</li>
+    <li>Dedica tiempo a actividades que disfrutes.</li>
+    <li>Practica respiraciones lentas y tranquilas.</li>
+    <li>Pide ayuda cuando la necesites.</li>
+  </ul>
+  <div class="consejo">
+    💡 No estás solo. Tu familia y tu equipo de salud pueden acompañarte.
+  </div>
+</section>
+
+<section class="unidad" id="tema6">
+  <span class="etiqueta">TEMA 6</span>
+  <div class="ilustracion">🚨</div>
+  <h2>Reconozcamos los signos de alarma</h2>
+
+  <h3>Azúcar baja (hipoglucemia)</h3>
+  <p>Puede producir:</p>
+  <ul>
+    <li>Sudor frío.</li>
+    <li>Temblor y hambre intensa.</li>
+    <li>Mareo o debilidad.</li>
+    <li>Confusión o dificultad para hablar.</li>
+  </ul>
+  <div class="consejo">
+    Si la persona está despierta y puede tragar, dale 15 gramos de azúcar de acción rápida, según su plan de tratamiento. Revisa la glucosa después de 15 minutos si es posible. Si sigue baja, repite y busca orientación.
+  </div>
+  <div class="alerta">
+    <strong>¡Emergencia!</strong> Si está inconsciente, convulsiona o no puede tragar, no le des alimentos ni líquidos por la boca. Si tiene glucagón y alguien sabe usarlo, aplícalo. Llama a emergencias.
+  </div>
+
+  <h3>Azúcar alta (hiperglucemia)</h3>
+  <p>Presta atención a estas señales:</p>
+  <ul>
+    <li>Mucha sed.</li>
+    <li>Orinar con frecuencia.</li>
+    <li>Visión borrosa.</li>
+    <li>Cansancio intenso.</li>
+  </ul>
+  <div class="alerta">
+    Busca atención urgente si tienes vómitos, dolor abdominal, respiración rápida o profunda, mucha somnolencia, confusión o dificultad para respirar.
+  </div>
+
+  <h3>Cuida tus pies</h3>
+  <p>Las heridas, ampollas, enrojecimiento, hinchazón o cambios de color requieren valoración pronta por el equipo de salud.</p>
+  <div class="consejo">
+    💜 Ante una señal de alarma, no esperes a que empeore. Busca ayuda.
+  </div>
+</section>
+
+<section class="unidad" id="evaluacion">
+  <span class="etiqueta">¡PON A PRUEBA LO APRENDIDO!</span>
+  <div class="ilustracion">🧠 ⭐</div>
+  <h2>¿Cuánto aprendiste?</h2>
+  <div class="pregunta">
+    <p><strong>1. ¿Debes suspender tus medicamentos cuando te sientes bien?</strong></p>
+    <button onclick="responder(1,'no')">Sí</button>
+    <button onclick="responder(1,'si')">No</button>
+    <div class="respuesta" id="r1" aria-live="polite"></div>
+  </div>
+
+  <div class="pregunta">
+    <p><strong>2. ¿Es importante revisar tus pies todos los días?</strong></p>
+    <button onclick="responder(2,'si')">Sí</button>
+    <button onclick="responder(2,'no')">No</button>
+    <div class="respuesta" id="r2" aria-live="polite"></div>
+  </div>
+
+  <div class="pregunta">
+    <p><strong>3. ¿Qué debes hacer si una persona con hipoglucemia está inconsciente?</strong></p>
+    <button onclick="responder(3,'no')">Darle agua o comida</button>
+    <button onclick="responder(3,'si')">Pedir ayuda urgente y no darle nada por la boca</button>
+    <div class="respuesta" id="r3" aria-live="polite"></div>
+  </div>
+
+  <div class="pregunta">
+    <p><strong>4. ¿Cuidar tus emociones también es importante?</strong></p>
+    <button onclick="responder(4,'si')">Sí</button>
+    <button onclick="responder(4,'no')">No</button>
+    <div class="respuesta" id="r4" aria-live="polite"></div>
+  </div>
+</section>
+
+<div class="portada" style="margin-top:24px;">
+  <div class="ilustracion">💜</div>
+  <h2>¡Felicitaciones!</h2>
+  <p>Cada aprendizaje es un paso para cuidar tu salud.</p>
+  <p><strong>TRANSFORMARTE · Conectando con tu bienestar.</strong></p>
+  <a class="volver" href="index.html">Volver al inicio</a>
+</div>
+
+</main>
+
+<footer>
+  Material educativo para pacientes y familias.<br>
+  Hospital y equipo de salud: adapta las recomendaciones al plan individual de cada persona.<br>
+  TRANSFORMARTE · Educación para el autocuidado.
+</footer>
+
+<script>
+function responder(numero, opcion) {
+  const correcta = {
+    1: "si",
+    2: "si",
+    3: "si",
+    4: "si"
+  };
+
+  const mensajes = {
+    1: "¡Correcto! No suspendas tus medicamentos sin indicación del equipo de salud.",
+    2: "¡Muy bien! Revisar los pies ayuda a encontrar heridas a tiempo.",
+    3: "¡Correcto! No des nada por la boca. Pide ayuda urgente.",
+    4: "¡Así es! Tu bienestar emocional también importa."
+  };
+
+  const incorrectos = {
+    1: "Recuerda: no debes suspender los medicamentos por tu cuenta.",
+    2: "Recuerda: revisa tus pies todos los días.",
+    3: "Nunca des alimentos ni líquidos a una persona inconsciente.",
+    4: "Tus emociones también necesitan cuidado y apoyo."
+  };
+
+  document.getElementById("r" + numero).textContent =
+    opcion === correcta[numero] ? mensajes[numero] : incorrectos[numero];
+}
+</script>
+
+</body>
+</html>

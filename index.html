@@ -1,162 +1,194 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#7137A8">
-  <meta name="description" content="Transformarte: conectando con tu bienestar. Aprende, practica y cuida tu salud.">
-  <title>Transformarte | Conectando con tu bienestar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#76509A">
+<title>TRANSFORMARTE | Conectando con tu bienestar</title>
 
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      <div style="text-align:center; padding:20px 10px;">
-  <img
-    src="logo-transformarte.png"
-    alt="Transformarte - Conectando con tu bienestar"
-    style="width:220px; max-width:80%; height:auto;"
-  >
-</div>
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #faf8ff;
-      color: #34234e;
-    }
-    header {
-      text-align: center;
-      padding: 25px 16px;
-      background: white;
-    }
-    .logo {
-      font-size: 35px;
-      font-weight: 800;
-      color: #7137A8;
-    }
-    .logo span { color: #e99a22; }
-    .slogan { color: #31566b; margin-top: 6px; }
-    .welcome {
-      margin: 16px;
-      padding: 25px;
-      border-radius: 22px;
-      color: white;
-      background: linear-gradient(120deg,#51249a,#a66bd0);
-    }
-    .welcome h1 { margin: 0 0 8px; font-size: 30px; }
-    main { max-width: 850px; margin: auto; padding: 10px 16px 30px; }
-    h2 { text-align: center; color: #65349a; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 14px;
-    }
-    .card {
-      border: 0;
-      border-radius: 22px;
-      padding: 20px 12px;
-      min-height: 160px;
-      text-align: center;
-      color: #30204c;
-      cursor: pointer;
-      box-shadow: 0 3px 10px #30204c18;
-      font-size: 17px;
-    }
-    .card strong { display: block; font-size: 20px; margin: 8px 0; }
-    .card .emoji { font-size: 42px; }
-    .blue { background: #dcefff; }
-    .pink { background: #ffe3eb; }
-    .green { background: #dcf8ec; }
-    .yellow { background: #fff0d5; }
-    .purple { background: #eee2ff; }
-    .family {
-      margin-top: 16px;
-      padding: 20px;
-      border-radius: 20px;
-      background: #eee2ff;
-      text-align: center;
-    }
-    button:focus-visible {
-      outline: 3px solid #e99a22;
-      outline-offset: 3px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #665879;
-      font-size: 13px;
-    }
-    @media(max-width:480px) {
-      .grid { grid-template-columns: 1fr; }
-      .welcome h1 { font-size: 25px; }
-    }
-  </style>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #F8F5FA;
+  color: #40354A;
+}
+
+header {
+  text-align: center;
+  padding: 25px 15px 15px;
+  background: white;
+}
+
+header img {
+  width: 230px;
+  max-width: 85%;
+  height: auto;
+}
+
+main {
+  max-width: 850px;
+  margin: auto;
+  padding: 25px 18px;
+}
+
+.bienvenida {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.bienvenida h1 {
+  color: #70468D;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.bienvenida p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #70468D;
+  font-size: 22px;
+  margin: 25px 0 20px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.tarjeta {
+  background: white;
+  border-radius: 18px;
+  padding: 23px 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #40354A;
+  border: 1px solid #E9DFEF;
+  box-shadow: 0 3px 10px rgba(80,50,100,0.08);
+}
+
+.tarjeta:focus {
+  outline: 3px solid #70468D;
+}
+
+.icono {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.tarjeta h3 {
+  color: #70468D;
+  font-size: 19px;
+  margin: 8px 0;
+}
+
+.tarjeta p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.mensaje {
+  background: #EDE3F3;
+  border-radius: 18px;
+  padding: 22px;
+  text-align: center;
+  margin-top: 25px;
+  color: #63447A;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 12px;
+  font-size: 13px;
+  color: #76677E;
+}
+
+@media (max-width: 480px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .bienvenida h1 {
+    font-size: 26px;
+  }
+}
+</style>
 </head>
 
 <body>
- <header>
-    <div style="text-align:center; padding:20px 10px;">
-        <img
-            src="logo-transformarte.png"
-            alt="Transformarte - Conectando con tu bienestar"
-            style="width:220px; max-width:80%; height:auto;"
-        >
-    </div>
+
+<header>
+  <img src="logo-transformarte.png"
+       alt="TRANSFORMARTE - Conectando con tu bienestar">
 </header>
 
-  <section class="welcome">
-    <h1>¡Bienvenido!</h1>
-    <p>Tu salud, tu aprendizaje, tu bienestar.</p>
-    <strong>Aprendo, practico y cuido mi salud.</strong>
-  </section>
+<main>
 
-  <main>
-    <h2>¿Qué quieres aprender hoy?</h2>
+<section class="bienvenida">
+  <h1>¡Bienvenido a TRANSFORMARTE!</h1>
 
-    <div class="grid">
-      <button class="card blue" onclick="abrir('Diabetes')">
-        <span class="emoji">🩸</span>
-        <strong>Diabetes</strong>
-        Aprende a cuidar tu salud
-      </button>
+  <p>
+    Aprender a cuidarte también es parte de tu tratamiento.
+  </p>
 
-      <button class="card pink" onclick="abrir('Anticoagulación')">
-        <span class="emoji">❤️</span>
-        <strong>Anticoagulación</strong>
-        Cuídate con seguridad
-      </button>
+  <p>
+    Encuentra información sencilla para cuidar tu salud
+    y acompañar a quienes más quieres.
+  </p>
+</section>
 
-      <button class="card green" onclick="abrir('Aprendo jugando')">
-        <span class="emoji">🎮</span>
-        <strong>Aprendo jugando</strong>
-        Retos y actividades
-      </button>
+<h2 class="subtitulo">¿Qué quieres aprender hoy?</h2>
 
-      <button class="card yellow" onclick="abrir('Escucho y observo')">
-        <span class="emoji">🎧</span>
-        <strong>Escucho y observo</strong>
-        Videos y audios
-      </button>
-    </div>
+<section class="contenedor">
 
-    <section class="family">
-      <div style="font-size:38px">👨‍👩‍👧‍👦</div>
-      <h2>Mi familia también aprende</h2>
-      Orientaciones para acompañarte en casa.
-      <p><button onclick="abrir('Mi familia también aprende')">
-        Conocer más
-      </button></p>
-    </section>
-  </main>
+<a class="tarjeta" href="#diabetes">
+  <div class="icono">💗</div>
+  <h3>Diabetes</h3>
+  <p>Aprende a cuidar tu glucosa y prevenir complicaciones.</p>
+</a>
 
-  <footer>
-    Transformarte · Conectando con tu bienestar<br>
-    Educación para el autocuidado y el bienestar.
-  </footer>
+<a class="tarjeta" href="#anticoagulacion">
+  <div class="icono">🛡️</div>
+  <h3>Anticoagulación</h3>
+  <p>Conoce tus medicamentos y cómo utilizarlos con seguridad.</p>
+</a>
 
-  <script>
-    function abrir(seccion) {
-      alert("¡Bienvenido a " + seccion +
-        "! Próximamente encontrarás aquí nuestros contenidos educativos.");
-    }
-  </script>
+<a class="tarjeta" href="#alimentacion">
+  <div class="icono">🍎</div>
+  <h3>Alimentación saludable</h3>
+  <p>Descubre cómo alimentarte mejor cada día.</p>
+</a>
+
+<a class="tarjeta" href="#alarmas">
+  <div class="icono">🚨</div>
+  <h3>Signos de alarma</h3>
+  <p>Reconoce cuándo debes buscar atención en salud.</p>
+</a>
+
+</section>
+
+<div class="mensaje">
+  Tu salud, tu aprendizaje y tu bienestar
+  son nuestra prioridad. 💜
+</div>
+
+</main>
+
+<footer>
+  TRANSFORMARTE · Educación para pacientes y familias
+</footer>
+
 </body>
 </html>

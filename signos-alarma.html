@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signos de alarma | Transformarte</title>
+<style>
+:root {
+  --morado: #70459a;
+  --turquesa: #20a9a5;
+  --naranja: #f39b45;
+  --rojo: #c93636;
+  --fondo: #f5f8fa;
+  --texto: #303846;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+header {
+  background: white;
+  text-align: center;
+  padding: 22px 15px;
+  border-bottom: 4px solid var(--turquesa);
+}
+.logo {
+  width: 190px;
+  max-width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+header p { color: var(--morado); margin: 5px 0; }
+main { max-width: 900px; margin: auto; padding: 18px; }
+h1, h2, h3 { color: var(--morado); }
+h1 { text-align: center; font-size: 27px; }
+.intro {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 20px 0;
+}
+nav a {
+  display: block;
+  text-align: center;
+  padding: 15px 8px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background: var(--turquesa);
+}
+nav a:last-child { background: var(--morado); }
+.card {
+  background: white;
+  padding: 20px;
+  margin: 18px 0;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #0000000c;
+}
+.alerta {
+  border-left: 6px solid var(--rojo);
+  background: #fff1f1;
+  padding: 14px;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+.info {
+  border-left: 6px solid var(--turquesa);
+  background: #eaf8f7;
+  padding: 14px;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+.lowhi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.low, .hi {
+  padding: 18px;
+  border-radius: 14px;
+  text-align: center;
+}
+.low { background: #fff0f0; border: 2px solid #d65b5b; }
+.hi { background: #fff4e7; border: 2px solid var(--naranja); }
+.low strong, .hi strong { font-size: 32px; display: block; }
+button {
+  background: var(--morado);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 6px 3px;
+}
+button:hover { opacity: .9; }
+.opcion {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: #eee8f5;
+  color: var(--texto);
+  margin: 8px 0;
+}
+.opcion:focus { outline: 3px solid var(--naranja); }
+.respuesta { font-weight: bold; margin-top: 10px; }
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #59616b;
+  font-size: 14px;
+}
+.volver {
+  display: inline-block;
+  background: var(--morado);
+  color: white;
+  padding: 11px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+@media(max-width:600px) {
+  nav, .lowhi { grid-template-columns: 1fr; }
+  h1 { font-size: 23px; }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <img class="logo" src="logo-transformarte.png" alt="Logo Transformarte">
+  <p>Conectando con tu bienestar</p>
+</header>
+
+<main>
+<h1>🚨 Reconozco los signos de alarma</h1>
+
+<div class="intro">
+  <p>Aprender a reconocer las señales de alerta puede ayudarte a actuar a tiempo y proteger tu salud.</p>
+  <p><strong>En este módulo aprenderemos sobre diabetes y anticoagulación.</strong></p>
+</div>
+
+<nav>
+  <a href="#diabetes">🩸 Alarmas en diabetes</a>
+  <a href="#anticoagulacion">💊 Alarmas en anticoagulación</a>
+</nav>
+
+<section id="diabetes" class="card">
+<h2>🩸 1. Signos de alarma en diabetes</h2>
+<p>La glucosa es el azúcar que circula en la sangre. Cuando está muy baja o muy alta, nuestro cuerpo puede presentar señales de peligro.</p>
+
+<h3>¿Qué es la hipoglucemia?</h3>
+<p>Es cuando el azúcar en la sangre está demasiado bajo. Generalmente se considera baja cuando está por debajo de 70 mg/dL.</p>
+<p><strong>Señales que puedo presentar:</strong></p>
+<ul>
+<li>Sudor frío y temblor.</li>
+<li>Hambre repentina.</li>
+<li>Mareo o debilidad.</li>
+<li>Palpitaciones.</li>
+<li>Dolor de cabeza.</li>
+<li>Confusión o dificultad para hablar.</li>
+</ul>
+
+<div class="info">
+<strong>¿Qué debo hacer si tengo hipoglucemia?</strong>
+<ol>
+<li>Si estoy despierto y puedo tragar, consumir 15 gramos de azúcar de acción rápida, según el plan indicado por mi equipo de salud.</li>
+<li>Esperar 15 minutos y volver a medir la glucosa.</li>
+<li>Si continúa por debajo de 70 mg/dL, repetir el tratamiento.</li>
+<li>Cuando mejore, seguir las indicaciones sobre alimentación y vigilancia que me haya dado el equipo de salud.</li>
+</ol>
+</div>
+
+<div class="alerta">
+<strong>¡ATENCIÓN!</strong> Si la persona está inconsciente, convulsiona o no puede tragar, no darle alimentos, agua ni azúcar por la boca. Aplicar glucagón si está disponible y se sabe utilizar, y llamar inmediatamente a emergencias.
+</div>
+
+<h3>¿Qué es la hiperglucemia?</h3>
+<p>Es cuando el azúcar en la sangre está demasiado alto.</p>
+<p><strong>Algunas señales son:</strong></p>
+<ul>
+<li>Mucha sed.</li>
+<li>Orinar con mucha frecuencia.</li>
+<li>Visión borrosa.</li>
+<li>Cansancio intenso.</li>
+<li>Boca seca.</li>
+<li>Náuseas o vómitos.</li>
+</ul>
+
+<div class="alerta">
+<strong>Acude inmediatamente a urgencias</strong> si presentas vómitos, dolor abdominal, respiración rápida o profunda, aliento afrutado, somnolencia intensa o confusión. Pueden ser señales de una complicación grave.
+</div>
+
+<h3>¿Qué significa LOW y HI en mi glucómetro?</h3>
+<p>Son mensajes que pueden aparecer en la pantalla del glucómetro.</p>
+
+<div class="lowhi">
+  <div class="low">
+    <strong>LOW</strong>
+    <b>Glucosa demasiado baja</b>
+    <p>El resultado está por debajo del límite que puede medir el aparato.</p>
+    <p>Puede indicar una hipoglucemia grave.</p>
+  </div>
+  <div class="hi">
+    <strong>HI</strong>
+    <b>Glucosa demasiado alta</b>
+    <p>El resultado supera el límite máximo que puede medir el aparato.</p>
+    <p>Requiere atención y valoración médica urgente.</p>
+  </div>
+</div>
+
+<div class="info">
+<strong>Si aparece LOW o HI:</strong>
+<ul>
+<li>No ignores el mensaje.</li>
+<li>Lava y seca tus manos y repite la medición con una tira nueva, si estás en condiciones de hacerlo.</li>
+<li>Si aparece nuevamente, busca atención médica urgente.</li>
+<li>Si tienes síntomas graves, no esperes a repetir la medición: acude a urgencias.</li>
+</ul>
+<p>Los límites de LOW y HI pueden variar según el modelo del glucómetro.</p>
+</div>
+
+<h3>Otras señales que requieren atención</h3>
+<ul>
+<li>Heridas en los pies que no mejoran, especialmente si presentan infección.</li>
+<li>Enrojecimiento, hinchazón, calor o secreción en una herida.</li>
+<li>Pérdida repentina de la visión.</li>
+<li>Dolor en el pecho o dificultad para respirar.</li>
+</ul>
+<div class="alerta">
+<strong>Recuerda:</strong> ante dolor en el pecho, dificultad para respirar, desmayo o síntomas repentinos de un accidente cerebrovascular, llama a emergencias.
+</div>
+</section>
+
+<section id="anticoagulacion" class="card">
+<h2>💊 2. Signos de alarma en anticoagulación</h2>
+<p>Los anticoagulantes ayudan a prevenir la formación de coágulos, pero pueden aumentar el riesgo de sangrado.</p>
+
+<h3>¿Qué señales debo reconocer?</h3>
+<ul>
+<li>Sangrado de nariz o encías que no se detiene.</li>
+<li>Sangre en la orina.</li>
+<li>Deposiciones negras o con sangre.</li>
+<li>Vómito con sangre o parecido a café molido.</li>
+<li>Moretones grandes o que aparecen sin explicación.</li>
+<li>Menstruación mucho más abundante de lo habitual, cuando corresponda.</li>
+</ul>
+
+<div class="alerta">
+<strong>¡Acude a urgencias!</strong> Si tienes sangrado abundante, sangrado que no se detiene, vómito con sangre o deposiciones negras, necesitas valoración inmediata.
+</div>
+
+<h3>Señales de peligro que no debo ignorar</h3>
+<ul>
+<li>Dolor de cabeza muy intenso o repentino.</li>
+<li>Dificultad para hablar o entender.</li>
+<li>Pérdida repentina de fuerza en un brazo o una pierna.</li>
+<li>Alteración repentina de la visión.</li>
+<li>Caída o golpe en la cabeza, incluso si inicialmente me siento bien.</li>
+<li>Dolor en el pecho o dificultad para respirar.</li>
+</ul>
+
+<div class="alerta">
+<strong>¡EMERGENCIA!</strong> Ante cualquiera de estas señales, llama a emergencias o acude inmediatamente a urgencias. No conduzcas tú mismo.
+</div>
+
+<div class="info">
+<strong>¿Qué debo recordar si tomo anticoagulantes?</strong>
+<ul>
+<li>No suspender ni cambiar el medicamento por cuenta propia.</li>
+<li>Informar al personal de salud que utilizo un anticoagulante.</li>
+<li>No tomar medicamentos para el dolor sin consultar, especialmente antiinflamatorios.</li>
+<li>Informar siempre si sufrí una caída o un golpe en la cabeza.</li>
+<li>Asistir a los controles y exámenes que me hayan indicado.</li>
+</ul>
+</div>
+</section>
+
+<section class="card">
+<h2>🧠 3. Comprueba lo que aprendiste</h2>
+<p>Selecciona la respuesta correcta.</p>
+
+<div class="pregunta">
+<p><strong>1. Si mi glucómetro muestra LOW, ¿qué significa?</strong></p>
+<button class="opcion" onclick="responder(this,false)">Que mi azúcar está muy alta.</button>
+<button class="opcion" onclick="responder(this,true)">Que mi azúcar está por debajo del límite de medición.</button>
+<button class="opcion" onclick="responder(this,false)">Que el glucómetro está apagado.</button>
+</div>
+
+<div class="pregunta">
+<p><strong>2. Si una persona con hipoglucemia está inconsciente, ¿qué debo hacer?</strong></p>
+<button class="opcion" onclick="responder(this,false)">Darle agua con azúcar por la boca.</button>
+<button class="opcion" onclick="responder(this,true)">No darle nada por la boca y llamar a emergencias.</button>
+<button class="opcion" onclick="responder(this,false)">Esperar a que despierte.</button>
+</div>
+
+<div class="pregunta">
+<p><strong>3. Si mi glucómetro muestra HI repetidamente, debo:</strong></p>
+<button class="opcion" onclick="responder(this,true)">Buscar atención médica urgente.</button>
+<button class="opcion" onclick="responder(this,false)">Ignorar el mensaje.</button>
+<button class="opcion" onclick="responder(this,false)">Duplicar mi dosis de insulina sin indicación.</button>
+</div>
+
+<div class="pregunta">
+<p><strong>4. Si tomo anticoagulantes y me golpeo la cabeza, debo:</strong></p>
+<button class="opcion" onclick="responder(this,false)">Esperar a tener síntomas.</button>
+<button class="opcion" onclick="responder(this,true)">Acudir inmediatamente a urgencias.</button>
+<button class="opcion" onclick="responder(this,false)">Suspender el medicamento por mi cuenta.</button>
+</div>
+
+<div class="pregunta">
+<p><strong>5. Si presento sangrado abundante mientras tomo anticoagulantes, debo:</strong></p>
+<button class="opcion" onclick="responder(this,true)">Buscar atención de urgencias inmediatamente.</button>
+<button class="opcion" onclick="responder(this,false)">Esperar varios días.</button>
+<button class="opcion" onclick="responder(this,false)">Duplicar la siguiente dosis.</button>
+</div>
+
+<p id="resultado" class="respuesta" aria-live="polite"></p>
+<button onclick="reiniciar()">Reiniciar cuestionario</button>
+</section>
+
+<div class="intro">
+<h2>💜 ¡Tu salud es importante!</h2>
+<p>Reconocer las señales de alarma y actuar a tiempo puede salvar vidas.</p>
+<a class="volver" href="index.html">Volver al inicio de Transformarte</a>
+</div>
+
+</main>
+
+<footer>
+<p>Transformarte – Conectando con tu bienestar.</p>
+<p>Material educativo. No reemplaza la valoración ni las indicaciones del equipo de salud.</p>
+<p>Contenido sujeto a revisión y aprobación institucional antes de su publicación para pacientes.</p>
+</footer>
+
+<script>
+let correctas = 0;
+let respondidas = 0;
+
+function responder(boton, correcta) {
+  const pregunta = boton.closest(".pregunta");
+  if (pregunta.dataset.respondida) return;
+
+  pregunta.dataset.respondida = "si";
+  respondidas++;
+
+  const botones = pregunta.querySelectorAll("button");
+  botones.forEach(b => b.disabled = true);
+
+  if (correcta) {
+    correctas++;
+    boton.style.background = "#d8f3e4";
+    boton.style.color = "#145b36";
+  } else {
+    boton.style.background = "#ffe0e0";
+    boton.style.color = "#8b2222";
+  }
+
+  document.getElementById("resultado").textContent =
+    "Has respondido " + respondidas + " de 5 preguntas. Respuestas correctas: " + correctas + ".";
+}
+
+function reiniciar() {
+  correctas = 0;
+  respondidas = 0;
+  document.querySelectorAll(".pregunta").forEach(p => {
+    delete p.dataset.respondida;
+    p.querySelectorAll("button").forEach(b => {
+      b.disabled = false;
+      b.style.background = "";
+      b.style.color = "";
+    });
+  });
+  document.getElementById("resultado").textContent = "";
+}
+</script>
+</body>
+</html>

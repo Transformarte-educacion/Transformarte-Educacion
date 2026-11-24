@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transformarte | Alimentación saludable</title>
+<style>
+:root {
+  --verde:#25856d;
+  --verde-claro:#e8f5ed;
+  --morado:#65428b;
+  --morado-claro:#f1eafa;
+  --naranja:#ed9639;
+  --fondo:#fffaf5;
+  --texto:#30343b;
+}
+* {box-sizing:border-box}
+html {scroll-behavior:smooth}
+body {
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:var(--fondo);
+  color:var(--texto);
+  line-height:1.65;
+}
+header {
+  background:white;
+  text-align:center;
+  padding:22px 15px;
+  border-bottom:4px solid var(--verde);
+}
+.logo {width:190px;max-width:75%;height:auto}
+header p {margin:5px 0;color:#666}
+main {max-width:900px;margin:auto;padding:18px}
+h1,h2,h3 {line-height:1.3}
+h1 {color:var(--morado);font-size:2rem}
+h2 {color:var(--verde);margin-top:0}
+h3 {color:var(--morado)}
+.portada {
+  background:var(--verde-claro);
+  border-radius:22px;
+  padding:25px;
+  text-align:center;
+  margin:20px 0;
+}
+.portada .emoji {font-size:55px}
+.intro,.seccion {
+  background:white;
+  border-radius:18px;
+  padding:22px;
+  margin:20px 0;
+  box-shadow:0 2px 9px #0000000b;
+}
+.menu {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:12px;
+  margin:20px 0;
+}
+.menu a {
+  background:white;
+  border:2px solid #dcece3;
+  border-radius:15px;
+  padding:15px;
+  color:var(--verde);
+  text-decoration:none;
+  font-weight:bold;
+}
+.menu a:hover {background:var(--verde-claro)}
+.ficha {
+  background:var(--verde-claro);
+  border-left:5px solid var(--verde);
+  border-radius:12px;
+  padding:15px;
+  margin:14px 0;
+}
+.aviso {
+  background:#fff2e4;
+  border-left:5px solid var(--naranja);
+  padding:15px;
+  border-radius:10px;
+  margin:15px 0;
+}
+.plato {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin:15px 0;
+}
+.plato div {
+  border-radius:15px;
+  padding:17px;
+  text-align:center;
+}
+.verduras {background:#e1f3df}
+.proteina {background:#fce9d7}
+.cereales {background:#f5edce}
+.agua {background:#e2f3fa}
+.boton {
+  display:inline-block;
+  background:var(--morado);
+  color:white;
+  padding:11px 17px;
+  border-radius:12px;
+  border:0;
+  cursor:pointer;
+  font-size:1rem;
+  margin:5px 0;
+}
+.pregunta {
+  border:1px solid #ddd;
+  border-radius:12px;
+  padding:15px;
+  margin:15px 0;
+}
+.opcion {
+  display:block;
+  padding:10px;
+  margin:8px 0;
+  background:#f7f5f9;
+  border-radius:9px;
+  cursor:pointer;
+}
+#resultado {
+  font-weight:bold;
+  padding:12px;
+  border-radius:10px;
+  margin-top:12px;
+}
+.volver {color:var(--verde);font-weight:bold}
+footer {
+  text-align:center;
+  padding:25px;
+  background:var(--verde-claro);
+  margin-top:30px;
+}
+@media(max-width:600px) {
+  h1 {font-size:1.65rem}
+  main {padding:12px}
+  .seccion,.intro {padding:16px}
+  .plato {grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img class="logo" src="logo-transformarte.png"
+  alt="Logo Transformarte">
+  <p>Conectando con tu bienestar</p>
+</header>
+
+<main>
+<a class="volver" href="index.html">← Volver al inicio</a>
+
+<div class="portada">
+  <div class="emoji">🥑🥕🍎</div>
+  <h1>Aprendiendo a comer saludablemente</h1>
+  <p>Alimentarnos bien es una forma de cuidar nuestro cuerpo y nuestra salud.</p>
+  <strong>¡Pequeños cambios pueden hacer una gran diferencia!</strong>
+</div>
+
+<div class="intro">
+<h2>¡Bienvenidos!</h2>
+<p>Comer saludablemente no significa dejar de disfrutar los alimentos que nos gustan.</p>
+<p>Significa aprender a elegir, combinar y consumir alimentos variados, en cantidades adecuadas para nuestras necesidades.</p>
+<p>En este módulo aprenderemos juntos. ¡Invita a tu familia!</p>
+</div>
+
+<h2>Explora nuestros temas</h2>
+<nav class="menu">
+<a href="#saludable">🥗 ¿Qué es comer saludable?</a>
+<a href="#plato">🍽️ El plato saludable</a>
+<a href="#alimentos">🥦 Conozcamos los alimentos</a>
+<a href="#porciones">✋ Porciones y horarios</a>
+<a href="#agua">💧 La importancia del agua</a>
+<a href="#diabetes">💜 Alimentación y diabetes</a>
+<a href="#etiquetas">🏷️ Aprendamos a leer etiquetas</a>
+<a href="#mitos">💡 Mitos y verdades</a>
+<a href="#evaluacion">🎯 Pongamos a prueba lo aprendido</a>
+</nav>
+
+<section class="seccion" id="saludable">
+<h2>1. ¿Qué es comer saludablemente?</h2>
+<p>Es consumir diferentes alimentos que aporten energía y nutrientes para que nuestro cuerpo funcione bien.</p>
+<div class="ficha">
+<strong>Una alimentación saludable incluye:</strong>
+<ul>
+<li>Frutas y verduras todos los días.</li>
+<li>Fríjoles, lentejas, garbanzos y otras legumbres.</li>
+<li>Huevos, pescado, pollo y otras fuentes de proteína.</li>
+<li>Arroz, avena, maíz, papa, yuca y otros alimentos que aportan energía.</li>
+<li>Agua segura durante el día.</li>
+</ul>
+</div>
+<p>También es importante disfrutar la comida, compartir en familia y respetar nuestras costumbres y posibilidades económicas.</p>
+<div class="aviso">
+No existen alimentos mágicos que curen todas las enfermedades. Una alimentación saludable hace parte del cuidado integral.
+</div>
+</section>
+
+<section class="seccion" id="plato">
+<h2>2. ¡Aprendamos a organizar nuestro plato!</h2>
+<p>Una forma sencilla de combinar los alimentos es utilizar el método del plato.</p>
+
+<div class="plato">
+<div class="verduras">
+<h3>🥦 ½ PLATO</h3>
+<strong>Verduras y hortalizas</strong>
+<p>Tomate, zanahoria, pepino, brócoli, lechuga, habichuela y otras verduras.</p>
+</div>
+<div class="proteina">
+<h3>🍗 ¼ PLATO</h3>
+<strong>Alimentos con proteína</strong>
+<p>Huevo, pescado, pollo, carne magra o alternativas como tofu.</p>
+</div>
+<div class="cereales">
+<h3>🍚 ¼ PLATO</h3>
+<strong>Cereales, tubérculos y otros alimentos con almidón</strong>
+<p>Arroz, papa, yuca, plátano, arepa o pasta.</p>
+</div>
+<div class="agua">
+<h3>💧 ACOMPAÑA CON AGUA</h3>
+<strong>Hidratación</strong>
+<p>Prefiere agua en lugar de bebidas azucaradas.</p>
+</div>
+</div>
+
+<div class="aviso">
+Este plato es una guía visual, no una fórmula rígida para todas las personas. Las necesidades pueden cambiar según la edad, actividad física, enfermedades y tratamiento.
+</div>
+<p><strong>¿Y los fríjoles y las lentejas?</strong> Son alimentos muy nutritivos. Aportan proteína vegetal, fibra y carbohidratos. Pueden ocupar parte del espacio de los alimentos con proteína y también aportan al grupo de los alimentos que dan energía.</p>
+</section>
+
+<section class="seccion" id="alimentos">
+<h2>3. Conozcamos los alimentos</h2>
+
+<h3>🍎 Frutas</h3>
+<p>La guayaba, papaya, naranja, mandarina, mango, banano y muchas otras frutas aportan vitaminas, minerales y fibra.</p>
+<p>Prefiere consumirlas enteras o en trozos. El jugo no reemplaza completamente a la fruta entera.</p>
+
+<h3>🥬 Verduras</h3>
+<p>Son importantes por su aporte de fibra, vitaminas y minerales. Incluye diferentes colores en tus comidas.</p>
+
+<h3>🥚 Alimentos con proteína</h3>
+<p>Huevos, pescado, pollo, carnes, leche, yogur, fríjoles, lentejas y garbanzos ayudan a mantener y reparar los tejidos del cuerpo.</p>
+
+<h3>🌽 Cereales y tubérculos</h3>
+<p>Arroz, avena, maíz, papa, yuca, plátano y arepa aportan energía. Podemos elegir versiones integrales cuando estén disponibles.</p>
+
+<h3>🥑 Grasas</h3>
+<p>El aguacate, los frutos secos, las semillas y algunos aceites aportan grasas. Es recomendable consumirlos en cantidades moderadas.</p>
+
+<div class="ficha">
+<strong>Consejo práctico:</strong> aprovecha alimentos de temporada, compra frutas y verduras locales y planea tus comidas para evitar desperdicios.
+</div>
+</section>
+
+<section class="seccion" id="porciones">
+<h2>4. Porciones y horarios</h2>
+<p>La cantidad de comida que necesita cada persona es diferente. Depende de su edad, actividad física, estado de salud y necesidades nutricionales.</p>
+<div class="ficha">
+<strong>Algunas recomendaciones:</strong>
+<ul>
+<li>Sirve cantidades que puedas consumir y evita comer por obligación.</li>
+<li>Come despacio y presta atención a las señales de hambre y saciedad.</li>
+<li>Procura tener horarios de alimentación organizados.</li>
+<li>Evita saltarte comidas si tu tratamiento o condición de salud requiere horarios específicos.</li>
+<li>Si utilizas insulina u otros medicamentos que pueden bajar la glucosa, sigue el plan de alimentación indicado por tu equipo de salud.</li>
+</ul>
+</div>
+<div class="aviso">
+No todas las personas necesitan comer cinco veces al día ni utilizar el mismo tamaño de porción. Tu plan debe adaptarse a tus necesidades.
+</div>
+</section>
+
+<section class="seccion" id="agua">
+<h2>5. La importancia del agua</h2>
+<p>El agua ayuda a regular la temperatura corporal, transportar nutrientes y mantener el funcionamiento del organismo.</p>
+<ul>
+<li>Prefiere agua potable durante el día.</li>
+<li>Ten agua disponible cuando realices actividad física.</li>
+<li>Limita las gaseosas, bebidas azucaradas y jugos industrializados.</li>
+<li>Recuerda que las frutas enteras son una buena opción para consumir fibra.</li>
+</ul>
+<div class="aviso">
+La cantidad de líquidos necesaria depende de cada persona. Si tienes enfermedad renal, cardíaca u otra condición que requiere restricción de líquidos, sigue la cantidad indicada por tu equipo de salud.
+</div>
+</section>
+
+<section class="seccion" id="diabetes">
+<h2>6. Alimentación y diabetes</h2>
+<p>Las personas con diabetes pueden disfrutar de una alimentación variada y sabrosa. Lo importante es aprender a combinar los alimentos y seguir su plan de cuidado.</p>
+<div class="ficha">
+<strong>Recomendaciones prácticas:</strong>
+<ul>
+<li>Organiza tus comidas de acuerdo con tu plan de alimentación.</li>
+<li>Incluye verduras en el almuerzo y la cena.</li>
+<li>Prefiere frutas enteras en lugar de jugos.</li>
+<li>Modera las bebidas azucaradas, dulces y productos ultraprocesados.</li>
+<li>Combina los alimentos que aportan carbohidratos con verduras y fuentes de proteína.</li>
+<li>Aprende a reconocer los alimentos que pueden elevar tu glucosa.</li>
+<li>Controla tu glucosa según las indicaciones de tu equipo de salud.</li>
+</ul>
+</div>
+<p><strong>¿Debes eliminar todos los carbohidratos?</strong></p>
+<p>No. Los alimentos como arroz, papa, yuca, plátano, arepa, frutas y legumbres pueden hacer parte de la alimentación de una persona con diabetes. La cantidad y distribución deben ajustarse a su plan individual.</p>
+<div class="aviso">
+No cambies la dosis de insulina o de otros medicamentos para la diabetes por tu cuenta. Si tienes dudas sobre las comidas y tus medicamentos, consulta al equipo de salud.
+</div>
+</section>
+
+<section class="seccion" id="etiquetas">
+<h2>7. Aprendamos a leer las etiquetas</h2>
+<p>Las etiquetas nos ayudan a conocer qué contienen los alimentos empacados.</p>
+<div class="ficha">
+<strong>Cuando compres un producto, revisa:</strong>
+<ol>
+<li><strong>Tamaño de la porción:</strong> ¿cuánto representa una porción?</li>
+<li><strong>Azúcares:</strong> ¿cuánto azúcar contiene?</li>
+<li><strong>Sodio:</strong> ¿tiene mucha sal?</li>
+<li><strong>Grasas saturadas:</strong> ¿cuánto aporta?</li>
+<li><strong>Fecha de vencimiento:</strong> ¿está vigente?</li>
+<li><strong>Sellos de advertencia:</strong> revisa si tiene avisos de exceso de azúcares, sodio o grasas saturadas.</li>
+</ol>
+</div>
+<p>Compara productos similares y elige, cuando sea posible, los que tengan menos nutrientes críticos.</p>
+<div class="aviso">
+Un producto sin sellos no necesariamente es saludable. Revisa también la lista de ingredientes, el tamaño de la porción y el conjunto de tu alimentación.
+</div>
+</section>
+
+<section class="seccion" id="mitos">
+<h2>8. Mitos y verdades</h2>
+
+<h3>❌ Mito: las personas con diabetes nunca pueden comer frutas.</h3>
+<p><strong>✅ Verdad:</strong> pueden consumir frutas enteras, ajustando las porciones a su plan de alimentación.</p>
+
+<h3>❌ Mito: comer saludable siempre es costoso.</h3>
+<p><strong>✅ Verdad:</strong> alimentos como huevos, fríjoles, lentejas, avena y frutas de temporada pueden ser opciones nutritivas y económicas.</p>
+
+<h3>❌ Mito: los jugos naturales siempre son mejores que la fruta entera.</h3>
+<p><strong>✅ Verdad:</strong> la fruta entera conserva mejor su fibra y suele favorecer una mayor saciedad.</p>
+
+<h3>❌ Mito: hay que eliminar por completo el arroz, la papa y la arepa.</h3>
+<p><strong>✅ Verdad:</strong> pueden formar parte de una alimentación saludable, cuidando las cantidades y las combinaciones.</p>
+
+</section>
+
+<section class="seccion" id="evaluacion">
+<h2>9. ¡Pongamos a prueba lo aprendido!</h2>
+<p>Selecciona una respuesta para cada pregunta.</p>
+
+<div class="pregunta">
+<p><strong>1. ¿Qué bebida es la mejor opción para hidratarse habitualmente?</strong></p>
+<label class="opcion"><input type="radio" name="p1" value="a"> Gaseosa.</label>
+<label class="opcion"><input type="radio" name="p1" value="b"> Agua potable.</label>
+<label class="opcion"><input type="radio" name="p1" value="c"> Bebida azucarada.</label>
+</div>
+
+<div class="pregunta">
+<p><strong>2. ¿Qué es recomendable consumir diariamente?</strong></p>
+<label class="opcion"><input type="radio" name="p2" value="a"> Frutas y verduras variadas.</label>
+<label class="opcion"><input type="radio" name="p2" value="b"> Solo arroz y pan.</label>
+<label class="opcion"><input type="radio" name="p2" value="c"> Únicamente jugos.</label>
+</div>
+
+<div class="pregunta">
+<p><strong>3. ¿Una persona con diabetes debe eliminar todos los carbohidratos?</strong></p>
+<label class="opcion"><input type="radio" name="p3" value="a"> Sí, siempre.</label>
+<label class="opcion"><input type="radio" name="p3" value="b"> No, debe ajustar cantidades y distribución con su equipo de salud.</label>
+</div>
+
+<div class="pregunta">
+<p><strong>4. ¿Qué debemos revisar en una etiqueta?</strong></p>
+<label class="opcion"><input type="radio" name="p4" value="a"> Solo el color del empaque.</label>
+<label class="opcion"><input type="radio" name="p4" value="b"> Tamaño de porción, azúcares, sodio, grasas y fecha de vencimiento.</label>
+</div>
+
+<div class="pregunta">
+<p><strong>5. ¿Los fríjoles y las lentejas son alimentos nutritivos?</strong></p>
+<label class="opcion"><input type="radio" name="p5" value="a"> Sí, aportan proteína vegetal y fibra.</label>
+<label class="opcion"><input type="radio" name="p5" value="b"> No, no aportan nutrientes.</label>
+</div>
+
+<button class="boton" onclick="calificar()">Comprobar mis respuestas</button>
+<div id="resultado" aria-live="polite"></div>
+</section>
+
+<div class="intro">
+<h2>💚 ¡Tu bienestar comienza con pequeños cambios!</h2>
+<p>Elige alimentos variados, disfruta tus comidas, comparte con tu familia y recuerda que cada persona tiene necesidades diferentes.</p>
+<strong>¡Alimentarse bien también es cuidarse!</strong>
+</div>
+
+<a class="volver" href="index.html">← Volver a Transformarte</a>
+</main>
+
+<footer>
+<strong>TRANSFORMARTE</strong><br>
+Conectando con tu bienestar 🦋<br>
+Material educativo para pacientes y familias.<br><br>
+Contenido sujeto a revisión y aprobación institucional.
+</footer>
+
+<script>
+function calificar() {
+  const respuestas = {
+    p1:"b",
+    p2:"a",
+    p3:"b",
+    p4:"b",
+    p5:"a"
+  };
+
+  let correctas = 0;
+  let contestadas = 0;
+
+  for (const pregunta in respuestas) {
+    const seleccion = document.querySelector(
+      'input[name="' + pregunta + '"]:checked'
+    );
+
+    if (seleccion) {
+      contestadas++;
+      if (seleccion.value === respuestas[pregunta]) {
+        correctas++;
+      }
+    }
+  }
+
+  const resultado = document.getElementById("resultado");
+
+  if (contestadas < 5) {
+    resultado.textContent =
+      "¡Te faltan preguntas! Responde las cinco para conocer tu resultado.";
+    resultado.style.background = "#fff2e4";
+    return;
+  }
+
+  resultado.textContent =
+    "¡Obtuviste " + correctas + " de 5 respuestas correctas! " +
+    (correctas === 5
+      ? "¡Excelente trabajo! 💚"
+      : "¡Sigue aprendiendo! Puedes repasar los temas y volver a intentarlo.");
+
+  resultado.style.background = "#e8f5ed";
+}
+</script>
+
+</body>
+</html>

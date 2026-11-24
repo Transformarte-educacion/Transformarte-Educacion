@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transformarte | Anticoagulación</title>
+<style>
+:root {
+  --morado:#65428b;
+  --morado-claro:#f1eafa;
+  --turquesa:#168c8c;
+  --turquesa-claro:#e6f6f4;
+  --naranja:#f29b38;
+  --rojo:#b93636;
+  --fondo:#fffaf5;
+  --texto:#30343b;
+}
+* {box-sizing:border-box}
+body {
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:var(--fondo);
+  color:var(--texto);
+  line-height:1.65;
+}
+header {
+  background:white;
+  text-align:center;
+  padding:22px 15px;
+  border-bottom:4px solid var(--turquesa);
+}
+.logo {
+  width:190px;
+  max-width:75%;
+  height:auto;
+}
+header p {margin:5px 0;color:#666}
+main {max-width:900px;margin:auto;padding:18px}
+h1,h2,h3 {line-height:1.25}
+h1 {color:var(--morado);font-size:2rem}
+h2 {color:var(--turquesa);margin-top:0}
+h3 {color:var(--morado)}
+.portada {
+  background:var(--morado-claro);
+  border-radius:22px;
+  padding:25px;
+  text-align:center;
+  margin:20px 0;
+}
+.portada .emoji {font-size:52px}
+.intro {
+  background:white;
+  border-radius:16px;
+  padding:18px;
+  margin:15px 0;
+}
+.menu {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:12px;
+  margin:20px 0;
+}
+.menu a {
+  background:white;
+  border:2px solid #e8dff1;
+  border-radius:15px;
+  padding:15px;
+  color:var(--morado);
+  text-decoration:none;
+  font-weight:bold;
+}
+.menu a:hover {background:var(--morado-claro)}
+.seccion {
+  background:white;
+  padding:22px;
+  border-radius:18px;
+  margin:22px 0;
+  box-shadow:0 2px 9px #0000000b;
+}
+.ficha {
+  background:var(--turquesa-claro);
+  border-left:5px solid var(--turquesa);
+  border-radius:12px;
+  padding:15px;
+  margin:12px 0;
+}
+.aviso {
+  background:#fff1e3;
+  border-left:5px solid var(--naranja);
+  padding:15px;
+  border-radius:10px;
+  margin:15px 0;
+}
+.urgente {
+  background:#fff0f0;
+  border-left:5px solid var(--rojo);
+  padding:15px;
+  border-radius:10px;
+  margin:15px 0;
+}
+.boton {
+  display:inline-block;
+  background:var(--morado);
+  color:white;
+  padding:11px 17px;
+  border-radius:12px;
+  text-decoration:none;
+  border:0;
+  cursor:pointer;
+  font-size:1rem;
+  margin:5px 0;
+}
+.volver {color:var(--turquesa);font-weight:bold}
+.pregunta {
+  border:1px solid #ddd;
+  border-radius:12px;
+  padding:15px;
+  margin:15px 0;
+}
+.opcion {
+  display:block;
+  padding:10px;
+  margin:8px 0;
+  background:#f7f5f9;
+  border-radius:9px;
+  cursor:pointer;
+}
+#resultado {
+  font-weight:bold;
+  padding:12px;
+  border-radius:10px;
+  margin-top:12px;
+}
+footer {
+  text-align:center;
+  padding:25px;
+  background:var(--morado-claro);
+  margin-top:30px;
+}
+@media(max-width:600px) {
+  h1 {font-size:1.65rem}
+  main {padding:12px}
+  .seccion {padding:16px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img class="logo" src="logo-transformarte.png"
+  alt="Logo Transformarte">
+  <p>Conectando con tu bienestar</p>
+</header>
+
+<main>
+<a class="volver" href="index.html">← Volver al inicio</a>
+
+<div class="portada">
+  <div class="emoji">💜🩸</div>
+  <h1>Aprendiendo a vivir con anticoagulantes</h1>
+  <p>Conocer tus medicamentos te ayuda a cuidarte y prevenir complicaciones.</p>
+  <strong>Una educación para pacientes y familias.</strong>
+</div>
+
+<div class="intro">
+  <h2>¡Bienvenidos!</h2>
+  Los anticoagulantes son medicamentos que ayudan a prevenir la formación de coágulos peligrosos en la sangre.
+  Aprendamos cómo utilizarlos de forma segura y cuándo debemos pedir ayuda.
+</div>
+
+<h2>Explora nuestros temas</h2>
+<nav class="menu">
+  <a href="#conozcamos">🩸 ¿Qué son los anticoagulantes?</a>
+  <a href="#tipos">💊 Conozcamos los medicamentos</a>
+  <a href="#cuidados">🛡️ Cuidados diarios</a>
+  <a href="#alimentacion">🥗 Alimentación y hábitos</a>
+  <a href="#alarmas">🚨 Signos de alarma</a>
+  <a href="#situaciones">❓ Olvidos y situaciones especiales</a>
+  <a href="#evaluacion">🎯 Pongamos a prueba lo aprendido</a>
+</nav>
+
+<section class="seccion" id="conozcamos">
+<h2>1. ¿Qué son los anticoagulantes?</h2>
+<p>La sangre circula por nuestro cuerpo. Algunas veces pueden formarse coágulos dentro de los vasos sanguíneos. Estos coágulos pueden dificultar o impedir la circulación de la sangre.</p>
+<p>Los anticoagulantes son medicamentos que disminuyen la capacidad de la sangre para formar coágulos.</p>
+<div class="ficha">
+  <strong>Recuerda:</strong> estos medicamentos no deben suspenderse ni modificarse sin autorización del profesional de salud.
+</div>
+</section>
+
+<section class="seccion" id="tipos">
+<h2>2. Conozcamos los tres grupos de anticoagulantes</h2>
+<p>Existen diferentes medicamentos. No todos funcionan igual ni se utilizan de la misma manera.</p>
+
+<h3>💊 A. Anticoagulantes orales directos (DOAC)</h3>
+<p>Son medicamentos que se toman por la boca, siguiendo una dosis y un horario establecidos por el médico.</p>
+<div class="ficha">
+  <strong>Medicamentos que utilizamos:</strong>
+  <ul>
+    <li>Apixabán.</li>
+    <li>Rivaroxabán.</li>
+    <li>Dabigatrán.</li>
+  </ul>
+</div>
+<ul>
+  <li>Tómalos exactamente como fueron formulados.</li>
+  <li>Respeta los horarios indicados.</li>
+  <li>No dupliques una dosis por haber olvidado una toma.</li>
+  <li>Consulta antes de tomar medicamentos nuevos, plantas medicinales o suplementos.</li>
+  <li>Informa siempre que utilizas un anticoagulante antes de una cirugía o procedimiento.</li>
+</ul>
+<div class="aviso">
+  <strong>Importante:</strong> las instrucciones ante una dosis olvidada son diferentes según el medicamento. Consulta las indicaciones específicas de tu tratamiento y no improvises.
+</div>
+
+<h3>💊 B. Warfarina</h3>
+<p>Es un anticoagulante que se toma por vía oral. Su efecto necesita vigilancia mediante un examen de sangre llamado INR.</p>
+<div class="ficha">
+  <strong>Cuidados importantes:</strong>
+  <ul>
+    <li>Asiste a todos los controles de INR.</li>
+    <li>Toma la dosis indicada y en el horario establecido.</li>
+    <li>No cambies la dosis por tu cuenta.</li>
+    <li>Informa sobre cualquier medicamento nuevo.</li>
+    <li>Mantén un consumo estable de alimentos con vitamina K.</li>
+  </ul>
+</div>
+<p>Algunos alimentos con vitamina K son las espinacas, acelgas, brócoli y otras verduras de hojas verdes.</p>
+<div class="aviso">
+  No necesitas eliminar estos alimentos. Lo importante es mantener una alimentación estable y seguir las recomendaciones del equipo de salud.
+</div>
+
+<h3>💉 C. Heparinas de bajo peso molecular (HBPM)</h3>
+<p>Son medicamentos que generalmente se aplican mediante una inyección debajo de la piel, llamada inyección subcutánea.</p>
+<div class="ficha">
+  <strong>Medicamentos utilizados:</strong>
+  <ul>
+    <li>Enoxaparina (Enoxa).</li>
+    <li>Dalteparina (Dalte).</li>
+    <li>Nadroparina cálcica (Fracciparine).</li>
+  </ul>
+</div>
+<p><strong>Cuidados para la aplicación:</strong></p>
+<ul>
+  <li>Aprende la técnica con personal de salud.</li>
+  <li>Utiliza la dosis y el horario formulados.</li>
+  <li>Aplica el medicamento en el sitio indicado y rota los lugares de aplicación según la enseñanza recibida.</li>
+  <li>No frotes ni masajees el sitio después de la aplicación.</li>
+  <li>No reutilices agujas ni jeringas.</li>
+  <li>Deposita las agujas en un recipiente adecuado para elementos cortopunzantes.</li>
+</ul>
+<div class="aviso">
+  La técnica puede variar según el producto y la jeringa. Sigue las instrucciones específicas que te enseñó el equipo de salud. No retires la burbuja de aire ni manipules la jeringa sin revisar las instrucciones del fabricante.
+</div>
+
+<div class="ficha">
+  <strong>¡Muy importante!</strong> Los DOAC, la warfarina y las HBPM no son intercambiables. Nunca cambies de uno a otro por tu cuenta.
+</div>
+</section>
+
+<section class="seccion" id="cuidados">
+<h2>3. Cuidados diarios para prevenir sangrados</h2>
+<ul>
+  <li>Utiliza cepillo de dientes suave.</li>
+  <li>Ten cuidado al afeitarte y al cortar tus uñas.</li>
+  <li>Evita actividades con alto riesgo de golpes o caídas.</li>
+  <li>Usa calzado cómodo y seguro.</li>
+  <li>Evita automedicarte.</li>
+  <li>Informa a todos los profesionales de salud que tomas un anticoagulante.</li>
+  <li>Conserva una lista actualizada de tus medicamentos.</li>
+</ul>
+<div class="ficha">
+  Lleva contigo una identificación o tarjeta que informe que utilizas anticoagulantes.
+</div>
+</section>
+
+<section class="seccion" id="alimentacion">
+<h2>4. Alimentación y hábitos saludables</h2>
+<ul>
+  <li>Mantén una alimentación variada y equilibrada.</li>
+  <li>Consulta antes de iniciar suplementos, productos naturales o dietas especiales.</li>
+  <li>Si utilizas warfarina, mantén estable el consumo de alimentos con vitamina K.</li>
+  <li>Realiza actividad física de acuerdo con tus posibilidades y recomendaciones médicas.</li>
+  <li>Evita el consumo excesivo de alcohol.</li>
+  <li>Asiste a tus controles de salud.</li>
+</ul>
+</section>
+
+<section class="seccion" id="alarmas">
+<h2>5. Signos de alarma: ¿cuándo pedir ayuda?</h2>
+<div class="urgente">
+<h3>🚨 Busca atención de urgencias si presentas:</h3>
+<ul>
+  <li>Sangrado abundante o que no se detiene.</li>
+  <li>Vómito con sangre o parecido a café molido.</li>
+  <li>Heces negras o con sangre.</li>
+  <li>Orina roja o con sangre.</li>
+  <li>Dolor de cabeza intenso y repentino.</li>
+  <li>Golpe fuerte en la cabeza, incluso si inicialmente te sientes bien.</li>
+  <li>Debilidad repentina de un lado del cuerpo, dificultad para hablar o pérdida súbita de visión.</li>
+  <li>Dificultad respiratoria repentina, dolor en el pecho o desmayo.</li>
+</ul>
+</div>
+<p>También informa al equipo de salud si aparecen moretones grandes sin explicación, sangrado de encías o nariz repetido, o menstruaciones mucho más abundantes de lo habitual.</p>
+<div class="aviso">
+  No esperes a que el sangrado empeore. Si hay signos graves, solicita atención de urgencias. No suspendas ni ajustes el medicamento por tu cuenta mientras esperas indicaciones.
+</div>
+</section>
+
+<section class="seccion" id="situaciones">
+<h2>6. ¿Qué hacer ante situaciones especiales?</h2>
+<h3>Si olvidas una dosis</h3>
+<p>No tomes una dosis doble para compensar. Las recomendaciones cambian según el anticoagulante y el momento en que recuerdes el olvido. Consulta las instrucciones específicas de tu medicamento o comunícate con tu equipo de salud.</p>
+
+<h3>Si tienes una cirugía o procedimiento dental</h3>
+<p>Informa con anticipación que utilizas anticoagulantes. El profesional responsable te indicará si debes hacer algún cambio. Nunca los suspendas por tu cuenta.</p>
+
+<h3>Si tienes una caída o un golpe</h3>
+<p>Si el golpe fue fuerte, ocurrió en la cabeza o presentas dolor de cabeza, mareo, vómito o cualquier síntoma nuevo, busca atención médica urgente.</p>
+
+<h3>Si necesitas otro medicamento</h3>
+<p>Consulta antes de tomar analgésicos, antiinflamatorios, antibióticos, productos naturales o suplementos.</p>
+</section>
+
+<section class="seccion" id="evaluacion">
+<h2>7. ¡Pongamos a prueba lo aprendido!</h2>
+<p>Selecciona una respuesta para cada pregunta.</p>
+
+<div class="pregunta">
+<p><strong>1. ¿Debes suspender tu anticoagulante porque te sientes bien?</strong></p>
+<label class="opcion"><input type="radio" name="p1" value="a"> Sí, si ya no tengo síntomas.</label>
+<label class="opcion"><input type="radio" name="p1" value="b"> No, nunca debo suspenderlo sin indicación del profesional de salud.</label>
+</div>
+
+<div class="pregunta">
+<p><strong>2. ¿Qué examen necesita vigilancia especial en quienes toman warfarina?</strong></p>
+<label class="opcion"><input type="radio" name="p2" value="a"> INR.</label>
+<label class="opcion"><input type="radio" name="p2" value="b"> Radiografía de tórax.</label>
+</div>
+
+<div class="pregunta">
+<p><strong>3. ¿Cómo se administran generalmente las HBPM?</strong></p>
+<label class="opcion"><input type="radio" name="p3" value="a"> Por inyección subcutánea.</label>
+<label class="opcion"><input type="radio" name="p3" value="b"> En gotas para los ojos.</label>
+</div>
+
+<div class="pregunta">
+<p><strong>4. ¿Qué debes hacer si presentas un sangrado abundante?</strong></p>
+<label class="opcion"><input type="radio" name="p4" value="a"> Esperar varios días.</label>
+<label class="opcion"><input type="radio" name="p4" value="b"> Buscar atención de urgencias.</label>
+</div>
+
+<button class="boton" onclick="calificar()">Comprobar mis respuestas</button>
+<div id="resultado" aria-live="polite"></div>
+</section>
+
+<div class="intro">
+<h2>💜 Recuerda</h2>
+Tu anticoagulante ayuda a proteger tu salud. Utilízalo de manera responsable, asiste a tus controles y consulta ante cualquier duda.
+<br><br>
+<strong>¡Tu cuidado también está en tus manos!</strong>
+</div>
+
+<a class="volver" href="index.html">← Volver a Transformarte</a>
+</main>
+
+<footer>
+<strong>TRANSFORMARTE</strong><br>
+Conectando con tu bienestar 🦋<br>
+Material educativo para pacientes y familias.<br><br>
+Contenido sujeto a revisión y aprobación institucional.
+</footer>
+
+<script>
+function calificar() {
+  const respuestas = {
+    p1:"b",
+    p2:"a",
+    p3:"a",
+    p4:"b"
+  };
+  let correctas = 0;
+  let contestadas = 0;
+
+  for (const pregunta in respuestas) {
+    const seleccion = document.querySelector(
+      'input[name="' + pregunta + '"]:checked'
+    );
+    if (seleccion) {
+      contestadas++;
+      if (seleccion.value === respuestas[pregunta]) {
+        correctas++;
+      }
+    }
+  }
+
+  const resultado = document.getElementById("resultado");
+
+  if (contestadas < 4) {
+    resultado.textContent =
+      "¡Te faltan preguntas! Responde las cuatro para conocer tu resultado.";
+    resultado.style.background = "#fff1e3";
+    return;
+  }
+
+  resultado.textContent =
+    "¡Obtuviste " + correctas + " de 4 respuestas correctas! " +
+    (correctas === 4
+      ? "¡Excelente trabajo! 💜"
+      : "¡Sigue aprendiendo! Puedes repasar los temas y volver a intentarlo.");
+  resultado.style.background = "#e6f6f4";
+}
+</script>
+
+</body>
+</html>
